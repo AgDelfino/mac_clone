@@ -3,6 +3,7 @@ import clsx from "clsx";
 import {Canvas} from "@react-three/fiber";
 import MacbookModel14 from "./models/Macbook-14";
 import { OrbitControls } from "@react-three/drei";
+import StudioLigths from "./StudioLigths";
 
 
 
@@ -38,7 +39,7 @@ const ProductViewer = () => {
                 </div>
             </div>
             <Canvas id="canvas" camera={{position: [0,2,5], fov: 50, near: 0.1, far: 100}}>
-                <ambientLight intensity={1} />
+                <StudioLigths />
                 <MacbookModel14 scale={0.06} position={[0, 0, 0]} />
                 <OrbitControls enableZoom={false} />
             </Canvas>
