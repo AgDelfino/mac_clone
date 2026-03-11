@@ -8,7 +8,7 @@ const ProductViewer = () => {
         <section id="product-viewer">
             <h2>Take a closer look.</h2>
             <div className="controls">
-                <p className="info">MacBook Pro 16" {color}</p>
+                <p className="info">MacBook Pro {scale === 0.06 ? '14"' : '16"'} {color === '#adb5bd' ? 'Silver' : 'Space Black'}</p>
                 <div className="flex flex-center gap-5 mt-5">
                     <div className="color-control">
                        <div 
